@@ -9,6 +9,10 @@ import { defineConfig } from "vitest/config";
 export default defineConfig({
     plugins: [react()],
     test: {
+        // this is the default, but setting just to be explicit
+        coverage: {
+            provider: "v8",
+        },
         environment: "jsdom",
         setupFiles: ["./src/vitest-setup.ts"],
     },
