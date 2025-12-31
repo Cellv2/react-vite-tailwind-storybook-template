@@ -13,7 +13,6 @@ import testingLibrary from "eslint-plugin-testing-library";
 
 export default defineConfig([
     globalIgnores(["dist", "coverage", ".storybook"]),
-
     {
         // strict, type-aware linting for actual application code
         files: ["src/**/*.{ts,tsx}"],
@@ -33,7 +32,6 @@ export default defineConfig([
             },
         },
     },
-
     {
         // test-specific linting (lighter, no type-aware checks), with both globals environments
         files: ["tests/**/*.{ts,tsx}"],
@@ -55,7 +53,6 @@ export default defineConfig([
             },
         },
     },
-
     {
         // non-strict linting for configs and Storybook files
         files: [
