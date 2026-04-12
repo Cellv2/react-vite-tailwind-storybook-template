@@ -16,7 +16,8 @@
         "test": "vitest",
         "test:coverage": "vitest --coverage.enabled true",
         "storybook": "storybook dev -p 6006 --ci",
-        "build-storybook": "storybook build"
+        "build-storybook": "storybook build",
+        "check": "npm run lint && npm run build && npm run test:coverage && npm run build-storybook"
     },
     "lint-staged": {
         "**/*": "prettier --write --ignore-unknown"
