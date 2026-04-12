@@ -16,6 +16,7 @@ export default defineConfig([
         "dist",
         "coverage",
         ".storybook",
+        "storybook-static",
         "public/mockServiceWorker.js",
     ]),
     {
