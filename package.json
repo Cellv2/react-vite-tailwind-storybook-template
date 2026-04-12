@@ -14,7 +14,7 @@
         "prettier:format": "prettier . --write",
         "preview": "vite preview",
         "test": "vitest",
-        "test:coverage": "vitest --coverage.enabled true",
+        "test:coverage": "vitest run --coverage.enabled true",
         "storybook": "storybook dev -p 6006 --ci",
         "build-storybook": "storybook build",
         "check": "npm run lint && npm run build && npm run test:coverage && npm run build-storybook"
