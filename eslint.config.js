@@ -12,7 +12,12 @@ import storybook from "eslint-plugin-storybook";
 import testingLibrary from "eslint-plugin-testing-library";
 
 export default defineConfig([
-    globalIgnores(["dist", "coverage", ".storybook"]),
+    globalIgnores([
+        "dist",
+        "coverage",
+        ".storybook",
+        "public/mockServiceWorker.js",
+    ]),
     {
         // strict, type-aware linting for actual application code
         files: ["src/**/*.{ts,tsx}"],
